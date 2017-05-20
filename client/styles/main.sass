@@ -1,0 +1,76 @@
+@charset "UTF-8"
+@import "components/header"
+@import "components/_form"
+@import "components/footer"
+
+
+*
+  -moz-transition: color 0.2s ease
+  -webkit-transition: color 0.2s ease
+  -ms-transition: color 0.2s ease
+  transition: color 0.2s ease
+  box-sizing: border-box
+
+html, body
+  margin: 0
+  padding: 0
+  border: 0
+  vertical-align: baseline
+
+*
+  box-sizing: border-box
+
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section
+  display: block
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+a img, a
+  border: none
+
+html, body
+  width: 100%
+  padding: 0
+  margin: 0
+  border: 0
+  font-family: 'Montserrat', sans-serif
+  font-weight: 400
+  font-size: 16px
+  color: #31323a
+
+html
+  position: relative
+  min-height: 100%
+body
+  background: url('../img/banner.jpg') repeat
+  margin-bottom: 50px
+#answer
+  padding: 40px 20px
+  font-size: 36px
+  text-align: center
+  color: #519315
+@media (max-width: 405px)
+  .b-delivery
+    margin-top: 10px
+  .b-form-wrap form
+    font-size: 14px
+    width: 90%
+@media (max-width: 767px)
+  #answer
+    font-size: 24px
+  .b-form-wrap
+    width: 100%
+    form
+      width: 80%
+
+@media (min-width: 768px)
+  .b-form-wrap
+    width: 80%
+@media (min-width: 992px)
+  .b-btn
+    padding: 12px 30px
+@media (min-width: 1200px)
+  .b-form__title
+    font-size: 30px

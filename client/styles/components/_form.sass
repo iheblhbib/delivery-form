@@ -1,0 +1,158 @@
+.b-form-wrap, #answer
+  background: #f9f6ed
+  border-radius: 4px
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1)
+  margin: 30px auto
+  text-align: left
+  padding: 20px 20px 40px
+  form
+    width: 50%
+    margin: 0 auto 30px
+.b-form__title
+  font-size: 24px
+  margin-top: 20px
+.b-delivery
+  display: inline-block
+input
+  color: #354c58
+  font-weight: 700
+input:focus
+  outline: none
+input::-webkit-input-placeholder
+  color: #354c58
+  font-weight: 700
+input::-moz-placeholder
+  color: #354c58
+  font-weight: 700
+input:-ms-input-placeholder
+  color: #354c58
+  font-weight: 700
+input:-moz-placeholder
+  color: #354c58
+  font-weight: 700
+
+.b-btn, label
+  color: #74bdb7
+  font-size: 12px
+  font-weight: 700
+  letter-spacing: 1.28px
+  text-transform: uppercase
+
+label
+  display: block
+  transform: translate(0, 1.25rem)
+  transition: 0.15s
+label[for="delivery"]
+  display: inline-block
+  transform: none!important
+.inputs--filled label
+  transform: translate(0, 0)
+.inputs--invalid label
+  color: #f37b56
+
+.b-btn
+  margin: 15px 10px 0 0
+  background: rgb(219, 96, 28)
+  border: none
+  color: #fff
+  padding: 12px 10px
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  transition: all 0.3s
+.b-btn:hover
+  opacity: 0.8
+#deliveryBtn
+  background-color: rgb(151, 88, 117)
+
+input[type=submit]
+  width: 100%
+
+input[type=email],
+input[type=text],
+input[type=tel],
+#city
+  width: 100%
+  background: none
+  border: none
+  border-bottom: 2px solid #74bdb7
+  box-sizing: border-box
+  outline: none
+
+input[type=submit]:hover,
+input[type=submit]:focus
+  opacity: 0.8
+  cursor: pointer
+  outline: none
+
+.inputs--invalid input
+  animation: shake 0.3s cubic-bezier(.36,.07,.19,.97) both
+  background: url(//assets.petermueller.io/codepen/dailyui-001/ico-invalid.svg) center right no-repeat
+  border-bottom: 2px solid #f37b56
+  box-shadow: none
+  color: #f37b56
+  transform: translate3d(0, 0, 0)
+
+.error
+  color: #f37b56
+  font-size: 12px
+  padding-top: 5px
+.checkbox:not(checked)
+  position: absolute
+  opacity: 0
+
+.checkbox
+  vertical-align: top
+  width: 17px
+  height: 17px
+  margin: 0 3px 0 0
+
+.checkbox + label
+  cursor: pointer
+.checkbox:not(checked) + label
+  position: relative
+  padding: 0 0 0 30px
+
+.checkbox:not(checked) + label:before
+  content: ''
+  position: absolute
+  top: -3px
+  left: 0
+  width: 22px
+  height: 22px
+  border: 1px solid #CDD1DA
+  border-radius: 4px
+  background: #FFF
+
+.checkbox:not(checked) + label:after
+  content: "\e013"
+  font-family: 'Glyphicons Halflings'
+  position: absolute
+  top: 0
+  left: 5px
+  width: 16px
+  height: 16px
+  border-radius: 4px
+  background: #ffffff
+  color: #74bdb7
+  opacity: 0
+  transition: all .2s
+.checkbox:checked + label:after
+  opacity: 1
+//.checkbox:focus + label:before
+//  box-shadow: 0 0 0 3px rgba(255,255,0,.5)
+.ui-widget.ui-widget-content
+  font-family: 'Montserrat', sans-serif
+  font-weight: 400
+.ui-button.ui-state-active:hover,.ui-button:active,.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active,a.ui-button:active
+  border: 1px solid #74bdb7
+  background: #74bdb7
+
+@keyframes shake
+  0%, 100%
+    transform: translate3d(0, 0, 0)
+  33%
+    transform: translate3d(-6px, 0, 0)
+
+  66%
+    transform: translate3d(6px, 0, 0)
+

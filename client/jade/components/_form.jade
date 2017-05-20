@@ -1,0 +1,37 @@
+.container
+  .row
+    .col-xs-12.col-sm-12
+      #answer(style="display:none;")
+        | Thank you!
+        br
+        | Your order is accepted.
+      .b-form-wrap
+        .b-title-box.text-center
+          .b-form__title Enter your details for delivery
+          p *required fields
+        form#deliveryForm
+          p
+            label(for='firstname') First Name*
+            input#firstname(name='firstname', type='text', data-rules="required firstname")
+          p
+            label(for='lastname') Last Name*
+            input#lastname(name='lastname', type='text', data-rules="required lastname")
+          p
+            label(for='phone') Phone number*
+            input#phone(name='phone', type='tel', data-rules="required phone")
+          p
+            label(for='email') Email*
+            input#email(name='email', type='email', data-rules="required email")
+          p.delivery-input(style='display: none;')
+            label(for='city') City
+            input#city(name='city', type='text')
+          p.delivery-input(style='display: none;')
+            label(for='address') Address
+            input#address(name='address', type='text')
+          input#deliveryBtn.b-btn(type='button', value='Delivery')
+          .b-delivery
+            input#delivery.checkbox(type='checkbox', name='delivery', value="without delivery")
+            label(for='delivery') without delivery
+          p
+            input#submit.b-submit.b-btn(type='submit', value='Send')
+

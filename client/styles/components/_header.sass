@@ -1,0 +1,83 @@
+.site-header
+  width: 100%
+  min-height: 85px
+  background: #ffffff
+  position: fixed
+  z-index: 9
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    width: 100%
+    min-height: 89px
+    bottom: -16px
+    background: url("../img/bg-header.png") repeat-x bottom center
+.b-header-contacts
+  float: right
+.b-header-tel.b-tel
+  display: inline-block
+  color: #333333
+  font-family: Arial, sans-serif
+  font-size: 18px
+  font-weight: 700
+  text-decoration: none
+  position: relative
+  top: 2px
+  margin: 0 18px 5px 0
+  &:link,
+  &:visited,
+  &:hover,
+  &:active
+    color: #333333
+.b-logo
+  margin-top: 10px
+a.b-free-tel
+  cursor: pointer
+  color: #19a9e5
+  font-size: 14px
+  font-family: 'Acrom Bold',sans-serif
+  display: inline-block
+  border: 1px solid #19a9e5
+  background-color: #ffffff
+  text-transform: uppercase
+  padding: 10px 24px 8px 48px
+  border-radius: 50px
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  transition: all 0.3s
+  position: relative
+  &:link,
+  &:visited
+    color: #333333
+    text-decoration: none
+  &:hover,
+  &:active
+    color: #ffffff
+    background-color: #19a9e5
+    text-decoration: none
+
+.modal-backdrop
+  z-index: 8
+.modal-content
+  background-color: #19a9e5
+  border-radius: 0
+  box-shadow: none
+.modal-header
+  border: none
+  padding-top: 98px
+.modal-backdrop
+  background-color: #ffffff
+.modal-backdrop.in
+  opacity: 0.8
+.close
+  opacity: 1
+  width: 30px
+  height: 30px
+  position: absolute
+  top: 30px
+  right: 30px
+
+#telform
+  margin: 30px 0 0
+  & p
+    margin: 0 0 25px
